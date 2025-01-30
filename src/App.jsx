@@ -135,7 +135,7 @@ function AboutMe() {
           </p>
         </div>
         <div className="about-me-desc-right">
-          <img src={javascript} width={820} alt="" />
+          <img className="image-js" src={javascript} width={820} alt="" />
         </div>
       </div>
     </div>

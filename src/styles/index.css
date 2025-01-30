@@ -10,6 +10,7 @@
   font-weight: 400;
   background-color: #023047;
   margin: 0;
+  width: 100%;
 
   color-scheme: light;
   font-synthesis: none;
@@ -243,5 +244,145 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-height: 1367px) and (min-height: 400px) {
+  .profile-image {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1790px) and (min-width: 1700px) {
+  .image-js {
+    width: 48rem;
+  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 590px) {
+  .navbar button {
+    font-size: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 200px) {
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr;
+    margin: 0;
+    padding-top: 1em;
+    background-color: #023047;
+    color: white;
+    min-height: 100vh;
+    box-shadow: 1px 3px 5px #023047;
+    scroll-margin-top: 5rem;
+  }
+  .profile-image {
+    width: 300px;
+  }
+  .introduction .in-left {
+    display: block;
+    align-items: center;
+    font-size: 0.8rem;
+    padding-left: 2rem;
+  }
+
+  .introduction .in-right {
+    display: block;
+    padding-top: 2rem;
+  }
+  .navbar {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #023047;
+    box-shadow: 1px 1px 20px #023047;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .navbar button {
+    height: 5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    background-color: #023047;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    padding: 0em 0.5em;
+    outline-color: none;
+  }
+
+  .about-me {
+    font-size: 0.7rem;
+    padding: 0px;
+  }
+  .about-me-desc-left {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 1520px) and (min-width: 1235px) {
+  .skills-list {
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1235px) and (min-width: 785px) {
+  .skills-list {
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 785px) and (min-width: 200px) {
+  .skills-list {
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  [class^="logo-"] {
+    width: 80%;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem;
+    border: 4px solid #219ebc;
+    border-radius: 2rem;
+    margin: 10px;
+  }
+  .contact-info {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 200px) {
+  .image-js {
+    display: none;
+  }
+  .about-me-desc {
+    display: flex;
+    margin-top: 5vh;
+    font-size: 1.5em;
+    border-top: 5px solid #219ebc;
+    border-bottom: 5px solid #219ebc;
+    border-radius: 2rem;
+  }
+  .about-me-desc-left {
+    padding: 2em;
+  }
+  .about-me-desc-right {
+    padding: 0;
   }
 }
