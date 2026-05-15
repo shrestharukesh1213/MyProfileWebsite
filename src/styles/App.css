@@ -1,0 +1,43 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #023047;
+}
+header,
+header * {
+  padding: 0px;
+  margin: 0px;
+}
+
+.profile-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.intro-icon {
+  width: 64px;
+  height: auto;
+}
+
+.skill-icon {
+  max-width: 60%;
+  height: auto;
+}
+
+[class^="logo-"] {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+[class^="logo-"]:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(33, 158, 188, 0.4);
+  border-color: #8ecae6;
+}
+
+.image-js {
+  max-width: 100%;
+  height: auto;
+}
